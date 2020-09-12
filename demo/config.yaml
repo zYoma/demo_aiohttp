@@ -1,0 +1,2 @@
+site_name: 'Demo site'
+database_uri: postgres://aiohttp_user:kdfs&923lf@127.0.0.1:5432/demo_aiohttp
