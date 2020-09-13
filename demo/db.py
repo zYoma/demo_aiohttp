@@ -2,7 +2,7 @@ from sqlalchemy import (
     Table, Text, Integer, VARCHAR, MetaData, Column
 )
 
-__all__ = ('post',)
+__all__ = ('post', 'meta')
 
 meta = MetaData()
 post = Table(
@@ -10,4 +10,5 @@ post = Table(
     Column('id', Integer, primary_key=True),
     Column('title', VARCHAR, nullable=True),
     Column('body', Text,),
+    Column('desc', Text,),
 )
