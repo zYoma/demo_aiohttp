@@ -1,1 +1,12 @@
-<h1>HELLOW - {{ site_name }}</h1>
+<div id="main">
+<h1 id="header">Чатик на вебсокетах</h1>
+ <form class="input-group" id="send">
+                        <input type="text" class="form-control" name="text">
+                        <span class="input-group-btn">
+                        <button class="btn btn-default" type="submit">Написать</button>
+                        </span>
+</form>
+</div>
+<script src="{{ app.router.static.url_for(filename='js/jquery-3.2.0.min.js') }}"></script>
+<script type="text/javascript">var WS_URL = "{{ app.router['ws'].url_for(user=ip) }}";</script>
+<script src="{{ app.router.static.url_for(filename='js/ws.js') }}"></script>

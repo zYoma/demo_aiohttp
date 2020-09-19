@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}Добавление поста{% endblock %}
+{% block content %}
+  <form action="{{ app.router['add_post'].url_for() }}" method="post" accept-charset="utf-8" enctype="application/x-www/form-urlencoded">
+    <div class="form-group">
+      <label for="title">Заголовок</label>
+      <input class="form-control" id="title" type="text" placeholder="Заголовок поста" name="title">
+    </div>
+
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Текст</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="text"></textarea>
+    </div>
+    <button type="submith" class="btn btn-success">Отправить!</button>
+</form>
+
+
+{% endblock %}

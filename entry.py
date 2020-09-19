@@ -6,7 +6,8 @@ import aiohttp
 from demo import create_app
 from demo.settings import load_conf
 
-asyncio.set_event_loop_policy(uvloop.EventLoopPolicy())
+
+# asyncio.set_event_loop_policy(uvloop.EventLoopPolicy())
 
 parser = argparse.ArgumentParser(description="Demo project")
 parser.add_argument('--host', help='Хост', default='10.130.0.33')
